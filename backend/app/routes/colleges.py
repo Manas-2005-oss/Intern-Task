@@ -18,7 +18,7 @@ from app.config.settings import get_settings
 router = APIRouter(prefix="/colleges", tags=["colleges"])
 
 
-@router.get("", response_model=CollegesQueryResponse)
+@router.api_route("", methods=["GET", "HEAD"], response_model=CollegesQueryResponse)
 async def list_colleges(
     search: Optional[str] = Query(default=None, description="Search by college name substring"),
     location: Optional[str] = Query(default=None, description="Filter by city or state substring"),
