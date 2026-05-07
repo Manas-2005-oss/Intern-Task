@@ -1,0 +1,2 @@
+"""CampusIQ backend application package."""
+
