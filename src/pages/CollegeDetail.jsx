@@ -61,7 +61,7 @@ export default function CollegeDetail() {
             <div>
               <p className="text-sm font-semibold uppercase tracking-wide text-brand-100">{college.type} {college.accreditation && `- ${college.accreditation}`}</p>
               <h1 className="mt-2 text-3xl font-bold sm:text-4xl">{college.name}</h1>
-              <p className="mt-3 flex items-center gap-2 text-slate-300"><MapPin size={18} /> {college.location}{college.state ? `, ${college.state}` : ''}</p>
+              <p className="mt-3 flex items-center gap-2 text-slate-300"><MapPin size={18} /> {college.location?.city}, {college.location?.state}</p>
             </div>
             <button type="button" onClick={() => toggleSaved(college)} className="button-primary w-full bg-white text-slate-950 hover:bg-slate-100 sm:w-fit">
               <Bookmark size={17} fill={saved ? 'currentColor' : 'none'} /> {saved ? 'Saved' : 'Save college'}
