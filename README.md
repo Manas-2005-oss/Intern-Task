@@ -29,36 +29,6 @@ https://intern-task-steel.vercel.app/colleges
 
 ---
 
-# 🛠 Tech Stack
-
-## Frontend
-
-* React
-* Vite
-* Tailwind CSS
-* React Router
-* Axios
-* Lucide Icons
-
-## Backend
-
-* FastAPI
-* Python
-* Motor (Async MongoDB Driver)
-* JWT Authentication
-* Pydantic
-
-## Database
-
-* MongoDB Atlas
-
-## Deployment
-
-* Vercel (Frontend)
-* Render (Backend)
-
----
-
 # ✨ Features
 
 * JWT Authentication
